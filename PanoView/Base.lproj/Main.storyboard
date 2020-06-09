@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PanoView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Xm-vm-ztp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="orJ-bW-22A">
+                                <rect key="frame" x="202" y="84" width="199" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="MMQ-HR-deO"/>
+                                    <constraint firstAttribute="height" constant="30" id="YSw-ij-d5y"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="zoomSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="7qh-ZJ-NKl"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Xm-vm-ztp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8wv-n8-2JO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="orJ-bW-22A" secondAttribute="trailing" constant="15" id="OUc-tC-FWS"/>
+                            <constraint firstItem="9Xm-vm-ztp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U0e-AF-uWJ"/>
+                            <constraint firstItem="9Xm-vm-ztp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="c6h-VJ-121"/>
+                            <constraint firstAttribute="bottom" secondItem="9Xm-vm-ztp" secondAttribute="bottom" id="o2c-Kd-Azf"/>
+                            <constraint firstItem="orJ-bW-22A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="vDb-QK-ZYb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="9Xm-vm-ztp" id="X8B-Hz-uo1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="137.68115942028987"/>
+        </scene>
+    </scenes>
+</document>
