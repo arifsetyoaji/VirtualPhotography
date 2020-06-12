@@ -11,6 +11,12 @@
 		378007C8249154A800D8E5AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378007C7249154A800D8E5AC /* Main.storyboard */; };
 		378007CA2491557F00D8E5AC /* Panorama.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378007C92491557F00D8E5AC /* Panorama.storyboard */; };
 		378007CC249155A600D8E5AC /* PanoramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007CB249155A600D8E5AC /* PanoramaViewController.swift */; };
+		378007CF2491EC5C00D8E5AC /* PanoView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 378007CD2491EC5C00D8E5AC /* PanoView.xcdatamodeld */; };
+		378007D12491EE3300D8E5AC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007D02491EE3300D8E5AC /* CoreDataHelper.swift */; };
+		378007D32491EE7E00D8E5AC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007D22491EE7E00D8E5AC /* Extension.swift */; };
+		378007D52491EEDA00D8E5AC /* Photo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007D42491EEDA00D8E5AC /* Photo+Extensions.swift */; };
+		378007E92492181B00D8E5AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007E82492181B00D8E5AC /* Constants.swift */; };
+		378007EB249291AE00D8E5AC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007EA249291AE00D8E5AC /* CategoryViewController.swift */; };
 		37D625122491492A00E33948 /* Galleries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D625112491492A00E33948 /* Galleries.storyboard */; };
 		37D6251824914B9600E33948 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D6251724914B9600E33948 /* Search.storyboard */; };
 		830042AD248A589800F1D179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830042AC248A589800F1D179 /* AppDelegate.swift */; };
@@ -26,6 +32,12 @@
 		378007C7249154A800D8E5AC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		378007C92491557F00D8E5AC /* Panorama.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Panorama.storyboard; sourceTree = "<group>"; };
 		378007CB249155A600D8E5AC /* PanoramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaViewController.swift; sourceTree = "<group>"; };
+		378007CE2491EC5C00D8E5AC /* PanoView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PanoView.xcdatamodel; sourceTree = "<group>"; };
+		378007D02491EE3300D8E5AC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		378007D22491EE7E00D8E5AC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		378007D42491EEDA00D8E5AC /* Photo+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+Extensions.swift"; sourceTree = "<group>"; };
+		378007E82492181B00D8E5AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		378007EA249291AE00D8E5AC /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		37D625112491492A00E33948 /* Galleries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Galleries.storyboard; sourceTree = "<group>"; };
 		37D6251724914B9600E33948 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		830042A9248A589800F1D179 /* PanoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				378007C7249154A800D8E5AC /* Main.storyboard */,
+				378007D02491EE3300D8E5AC /* CoreDataHelper.swift */,
+				378007D22491EE7E00D8E5AC /* Extension.swift */,
+				378007D42491EEDA00D8E5AC /* Photo+Extensions.swift */,
+				378007E82492181B00D8E5AC /* Constants.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -77,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				378007C524914DBA00D8E5AC /* Category.storyboard */,
+				378007EA249291AE00D8E5AC /* CategoryViewController.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -121,6 +138,7 @@
 				830042C0248A598100F1D179 /* Hellbrunn25.jpg */,
 				830042B7248A589A00F1D179 /* LaunchScreen.storyboard */,
 				830042BA248A589A00F1D179 /* Info.plist */,
+				378007CD2491EC5C00D8E5AC /* PanoView.xcdatamodeld */,
 			);
 			path = PanoView;
 			sourceTree = "<group>";
@@ -201,10 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378007EB249291AE00D8E5AC /* CategoryViewController.swift in Sources */,
+				378007D12491EE3300D8E5AC /* CoreDataHelper.swift in Sources */,
 				830042B1248A589800F1D179 /* ViewController.swift in Sources */,
+				378007D32491EE7E00D8E5AC /* Extension.swift in Sources */,
 				378007CC249155A600D8E5AC /* PanoramaViewController.swift in Sources */,
 				830042AD248A589800F1D179 /* AppDelegate.swift in Sources */,
+				378007CF2491EC5C00D8E5AC /* PanoView.xcdatamodeld in Sources */,
+				378007D52491EEDA00D8E5AC /* Photo+Extensions.swift in Sources */,
 				830042AF248A589800F1D179 /* SceneDelegate.swift in Sources */,
+				378007E92492181B00D8E5AC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +418,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		378007CD2491EC5C00D8E5AC /* PanoView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				378007CE2491EC5C00D8E5AC /* PanoView.xcdatamodel */,
+			);
+			currentVersion = 378007CE2491EC5C00D8E5AC /* PanoView.xcdatamodel */;
+			path = PanoView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 830042A1248A589800F1D179 /* Project object */;
 }
