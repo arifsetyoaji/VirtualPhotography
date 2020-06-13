@@ -9,13 +9,30 @@
 import Foundation
 import CoreData
 
-extension Photo{
+struct Photos{
+    let imageName: String?
+    let place: String?
+    let source: String?
+    let id: Int?
+    let category: String?
+    let date: String?
     
-    static func savePhoto(){
+    init(imageName: String? = nil, id: Int? = nil,
+         category: String? = nil, date: String? = nil,
+         place: String? = nil, source: String? = nil) {
+        self.imageName = imageName
+        self.category = category
+        self.id = id
+        self.date = date
+        self.place = place
+        self.source = source
+    }
+    
+    func savePhoto(){
         
     }
     
-    static func deletePhoto() {
+    func deletePhoto() {
         
     }
 }
