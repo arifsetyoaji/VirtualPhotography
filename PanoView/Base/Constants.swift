@@ -9,11 +9,14 @@
 import Foundation
 
 struct Constants {
-    enum Category: String {
-        case nature = "Nature"
-        case building = "Building"
-        case country = "country"
-        case street = "street"
-        case indoor = "indoor"
+    enum Categories: String {
+        case All
+        case Nature
+        case Building
+        case Country
+        case Street
+        case Indoor
+        
+        static let allValues = [All, Nature, Building, Country, Street, Indoor]
     }
 }
