@@ -18,6 +18,7 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var previewImageView: UIImageView!
     
     var imgSnapshot: UIImage?
+    var resourceImage: String?
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -131,7 +132,7 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
     func addSphereNode() -> SCNNode {
         
         // Load assets
-        guard let image = UIImage(named: "Building2") else {
+        guard let image = UIImage(named: "\(resourceImage ?? "")") else {
             fatalError("Failed to load image")
         }
 

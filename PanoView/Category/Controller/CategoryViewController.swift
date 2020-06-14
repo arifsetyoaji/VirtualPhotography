@@ -45,7 +45,7 @@ class CategoryViewController: UIViewController {
         //set initial All photo
         photos = DummyData.init().dataPhotos(categoryId: 0)
         
-        self.navigationController?.title = "Choose photo"
+        navigationController?.navigationBar.isHidden = true
     }
 
 }
@@ -75,23 +75,24 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
         self.selectedCategory = indexPath.row
         let indexPath = NSIndexPath(row: 0, section: 0)
         self.photosTableView.scrollToRow(at: indexPath as IndexPath, at: .top, animated: true)
+        photos = DummyData.init().dataPhotos(categoryId: selectedCategory)
     }
 }
 
 // set table view photo list
 extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DummyData.init().dataPhotos(categoryId: self.selectedCategory).count
+        return DummyData.init().dataPhotos(categoryId: selectedCategory).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = photosTableView.dequeueReusableCell(withIdentifier: photoCategoryCellID, for: indexPath) as! PhotoCategoryCell
         
-        let data = DummyData.init().dataPhotos(categoryId: self.selectedCategory)[indexPath.row]
+        let data = DummyData.init().dataPhotos(categoryId: selectedCategory)[indexPath.row]
         cell.contentView.backgroundColor = UIColor.blue
         cell.contentView.layer.cornerRadius = 15
         cell.placeLabel.text = data.place
-        cell.sourceLabel.text = data.source
+        cell.sourceLabel.text = "Source: \(data.source ?? "")"
         cell.backgroundImage.image = UIImage(named: data.imageName ?? "")
         return cell
     }
@@ -99,5 +100,18 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
         let bounds = UIScreen.main.bounds
         let width = bounds.size.width
         return width
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "tapPhoto", sender: indexPath)
+        photosTableView.deselectRow(at: indexPath, animated: true) //dismiss highlight
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tapPhoto" {
+            let selectedIndexPath = sender as?NSIndexPath
+            let panoramaVC = segue.destination as! PanoramaViewController
+            panoramaVC.resourceImage = photos[selectedIndexPath!.row].imageName
+        }
     }
 }
