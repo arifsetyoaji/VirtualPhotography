@@ -35,9 +35,9 @@ class DummyData {
             return arrayPhoto
         case 3:
             category = Constants.Categories.Country.rawValue
-            arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Country 1", source: "Dummy Country 1"))
-            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Country 2", source: "Dummy Country 2"))
-            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Country 3", source: "Dummy Country 3"))
+            arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Venice", source: "Area 55 Studio"))
+            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Taj Mahal, India", source: "taj-mahal.net"))
+            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Miami Harbor, Miami", source: "Pixexid.com"))
             return arrayPhoto
         case 4:
             category = Constants.Categories.Street.rawValue
