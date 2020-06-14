@@ -30,6 +30,9 @@
 		830042B6248A589A00F1D179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830042B5248A589A00F1D179 /* Assets.xcassets */; };
 		830042B9248A589A00F1D179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830042B7248A589A00F1D179 /* LaunchScreen.storyboard */; };
 		830042C1248A598100F1D179 /* Hellbrunn25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 830042C0248A598100F1D179 /* Hellbrunn25.jpg */; };
+		8344A7F32495C60100595DF3 /* GalleryCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344A7F22495C60100595DF3 /* GalleryCollectionVC.swift */; };
+		8344A7F62495C6EF00595DF3 /* GalleryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344A7F52495C6EF00595DF3 /* GalleryCollectionCell.swift */; };
+		8344A7F82495CC3400595DF3 /* SelectedImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344A7F72495CC3400595DF3 /* SelectedImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		830042B8248A589A00F1D179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		830042BA248A589A00F1D179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830042C0248A598100F1D179 /* Hellbrunn25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hellbrunn25.jpg; sourceTree = "<group>"; };
+		8344A7F22495C60100595DF3 /* GalleryCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionVC.swift; sourceTree = "<group>"; };
+		8344A7F52495C6EF00595DF3 /* GalleryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionCell.swift; sourceTree = "<group>"; };
+		8344A7F72495CC3400595DF3 /* SelectedImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +116,8 @@
 		37D62510249148EA00E33948 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				37D625112491492A00E33948 /* Galleries.storyboard */,
+				8344A7F42495C62400595DF3 /* View */,
+				8344A7F12495C58C00595DF3 /* Controller */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -188,6 +195,24 @@
 				378007CD2491EC5C00D8E5AC /* PanoView.xcdatamodeld */,
 			);
 			path = PanoView;
+			sourceTree = "<group>";
+		};
+		8344A7F12495C58C00595DF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8344A7F22495C60100595DF3 /* GalleryCollectionVC.swift */,
+				8344A7F52495C6EF00595DF3 /* GalleryCollectionCell.swift */,
+				8344A7F72495CC3400595DF3 /* SelectedImageVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8344A7F42495C62400595DF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37D625112491492A00E33948 /* Galleries.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,12 +298,15 @@
 				830042B1248A589800F1D179 /* ViewController.swift in Sources */,
 				378007D32491EE7E00D8E5AC /* Extension.swift in Sources */,
 				378007CC249155A600D8E5AC /* PanoramaViewController.swift in Sources */,
+				8344A7F82495CC3400595DF3 /* SelectedImageVC.swift in Sources */,
 				830042AD248A589800F1D179 /* AppDelegate.swift in Sources */,
 				378007F72493A5D300D8E5AC /* PhotoCategoryCell.swift in Sources */,
 				378007CF2491EC5C00D8E5AC /* PanoView.xcdatamodeld in Sources */,
 				378007D52491EEDA00D8E5AC /* Photo+Extensions.swift in Sources */,
 				830042AF248A589800F1D179 /* SceneDelegate.swift in Sources */,
 				378007E92492181B00D8E5AC /* Constants.swift in Sources */,
+				8344A7F62495C6EF00595DF3 /* GalleryCollectionCell.swift in Sources */,
+				8344A7F32495C60100595DF3 /* GalleryCollectionVC.swift in Sources */,
 				378007FA2493A62100D8E5AC /* DummyData.swift in Sources */,
 				378007EF24931C8400D8E5AC /* CategoryCell.swift in Sources */,
 			);
