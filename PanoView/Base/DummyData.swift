@@ -18,15 +18,20 @@ class DummyData {
             return allDataPhoto()
         case 1:
             category = Constants.Categories.Nature.rawValue
-            arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Nature 1", source: "Dummy Nature 1"))
-            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Nature 2", source: "Dummy Nature 2"))
-            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Nature 3", source: "Dummy Nature 3"))
+            arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Talkeetna, Alaska", source: "Bryan Goff, Unsplash.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Grass Field, Miami", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Key Biscayne, Florida", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)4", category: "\(category)", place: "Lands End Trail, San Fransisco", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)5", category: "\(category)", place: "Larsen Peak, Quintarastreet", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)6", category: "\(category)", place: "Larsen Peak, Quintarastreet", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)7", category: "\(category)", place: "Larskspur, California", source: "Pixexid.com"))
             return arrayPhoto
         case 2:
             category = Constants.Categories.Building.rawValue
             arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Building 1", source: "Dummy Building 1"))
             arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Building 2", source: "Dummy Building 2"))
             arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Building 3", source: "Dummy Building 3"))
+            arrayPhoto.append(Photos(imageName: "\(category)4", category: "\(category)", place: "European Southern Observaroty HQ, Germany", source: "C. Malin / ESO"))
             return arrayPhoto
         case 3:
             category = Constants.Categories.Country.rawValue
@@ -36,9 +41,11 @@ class DummyData {
             return arrayPhoto
         case 4:
             category = Constants.Categories.Street.rawValue
-            arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Street 1", source: "Dummy Street 1"))
-            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Street 2", source: "Dummy Street 2"))
-            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Street 3", source: "Dummy Street 3"))
+            arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Lombard Street, San Francisco", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Rincon Park, San Fransisco", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Golden Gate Bridge, San Fransisco", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)4", category: "\(category)", place: "Miami Street, Miami", source: "Pixexid.com"))
+            arrayPhoto.append(Photos(imageName: "\(category)5", category: "\(category)", place: "Bayside Court, Miami", source: "Pixexid.com"))
             return arrayPhoto
         case 5:
             category = Constants.Categories.Indoor.rawValue

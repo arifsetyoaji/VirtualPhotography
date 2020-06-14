@@ -15,33 +15,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-fs-3qd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-fs-3qd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="dBL-fd-hIf">
-                                <rect key="frame" x="202" y="84" width="199" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="195" id="3O7-6x-AF0"/>
-                                    <constraint firstAttribute="height" constant="30" id="QCo-IP-NAS"/>
-                                </constraints>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-fU-imf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ydd-Qe-NrN">
+                                <rect key="frame" x="32" y="699" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRg-9e-OdV">
+                                <rect key="frame" x="178" y="703" width="58" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="circle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U0-5y-79K">
+                                <rect key="frame" x="165" y="691" width="83" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="circle" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="zoomSlider:" destination="BRP-0H-eOd" eventType="valueChanged" id="zOy-1X-Oyw"/>
+                                    <action selector="shutterButtonPressed:" destination="BRP-0H-eOd" eventType="touchUpInside" id="OKw-su-oXO"/>
                                 </connections>
-                            </slider>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sn-d5-cav">
+                                <rect key="frame" x="364" y="64" width="30" height="25.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="BRP-0H-eOd" eventType="touchUpInside" id="UmR-2c-xZl"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9LM-ex-FBS">
+                                <rect key="frame" x="68" y="823" width="278" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Camera"/>
+                                    <segment title="DSLR"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControll:" destination="BRP-0H-eOd" eventType="valueChanged" id="h4K-28-byV"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="eg0-fs-3qd" firstAttribute="leading" secondItem="Dhn-mi-ndQ" secondAttribute="leading" id="CBa-pB-SQi"/>
-                            <constraint firstItem="dBL-fd-hIf" firstAttribute="top" secondItem="FOa-2C-Uzo" secondAttribute="top" constant="40" id="Rhb-Zo-ga6"/>
-                            <constraint firstItem="eg0-fs-3qd" firstAttribute="trailing" secondItem="Dhn-mi-ndQ" secondAttribute="trailing" id="ZLZ-Tf-Sjn"/>
-                            <constraint firstItem="FOa-2C-Uzo" firstAttribute="trailing" secondItem="dBL-fd-hIf" secondAttribute="trailing" constant="15" id="bgc-9e-WId"/>
-                            <constraint firstItem="eg0-fs-3qd" firstAttribute="top" secondItem="Dhn-mi-ndQ" secondAttribute="top" id="mRt-dA-HOb"/>
-                            <constraint firstAttribute="bottom" secondItem="eg0-fs-3qd" secondAttribute="bottom" id="sgV-BL-Vor"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FOa-2C-Uzo"/>
                     </view>
                     <navigationItem key="navigationItem" id="z9m-0E-RCB"/>
                     <connections>
+                        <outlet property="blinkView" destination="xm3-fU-imf" id="AJ2-Pk-T2e"/>
+                        <outlet property="previewImageView" destination="Ydd-Qe-NrN" id="Ocd-6h-gyp"/>
                         <outlet property="sceneView" destination="eg0-fs-3qd" id="Rlt-UZ-lyZ"/>
                     </connections>
                 </viewController>
@@ -50,4 +83,9 @@
             <point key="canvasLocation" x="331.8840579710145" y="-60.267857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
 </document>
