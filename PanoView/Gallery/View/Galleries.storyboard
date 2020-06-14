@@ -8,6 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Panorama-->
+        <scene sceneID="z6l-f7-Zm6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Panorama" id="z89-gJ-LCd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="buA-SF-S2o"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UaF-pG-ReK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760" y="552"/>
+        </scene>
         <!--Gallery-->
         <scene sceneID="gUR-kQ-hgm">
             <objects>
@@ -68,17 +78,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uXy-ag-L8j">
-                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <rect key="frame" x="0.0" y="198" width="414" height="500"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="cKl-jg-xAa"/>
-                                    <constraint firstAttribute="height" constant="414" id="ldx-p1-E8g"/>
+                                    <constraint firstAttribute="height" constant="500" id="ldx-p1-E8g"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXl-xD-Mzu">
+                                <rect key="frame" x="0.0" y="811" width="414" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsN-PS-Z0Y">
+                                        <rect key="frame" x="355" y="20.5" width="29" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="29" id="7Vh-Q7-5XB"/>
+                                            <constraint firstAttribute="height" constant="29.5" id="d29-0C-V4M"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="trash" catalog="system"/>
+                                        <connections>
+                                            <action selector="deleteButtonPressed:" destination="Vgo-WB-iOi" eventType="touchUpInside" id="1dW-7J-RTt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfp-4i-kmk">
+                                        <rect key="frame" x="30" y="19.5" width="29" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="7BQ-GD-1hj"/>
+                                            <constraint firstAttribute="width" constant="29" id="sWx-PJ-Hta"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="square.and.arrow.up.on.square" catalog="system"/>
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="Vgo-WB-iOi" eventType="touchUpInside" id="YZL-GF-Dca"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9725398421" green="0.96856957669999999" blue="0.97254985569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UsN-PS-Z0Y" secondAttribute="bottom" constant="34" id="E8N-Wd-6Hd"/>
+                                    <constraint firstAttribute="trailing" secondItem="UsN-PS-Z0Y" secondAttribute="trailing" constant="30" id="LDF-hi-5AF"/>
+                                    <constraint firstItem="Qfp-4i-kmk" firstAttribute="leading" secondItem="eXl-xD-Mzu" secondAttribute="leading" constant="30" id="f4X-RU-SNc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qfp-4i-kmk" secondAttribute="bottom" constant="38" id="k1t-sM-VeR"/>
+                                    <constraint firstAttribute="height" constant="85" id="sOi-T3-yOL"/>
+                                    <constraint firstAttribute="width" constant="414" id="zi5-lh-1nI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="uXy-ag-L8j" firstAttribute="centerX" secondItem="GYf-Pr-e9a" secondAttribute="centerX" id="D9X-We-Qn9"/>
                             <constraint firstItem="uXy-ag-L8j" firstAttribute="centerY" secondItem="GYf-Pr-e9a" secondAttribute="centerY" id="E0L-8h-yl4"/>
+                            <constraint firstAttribute="bottom" secondItem="eXl-xD-Mzu" secondAttribute="bottom" id="Rs6-Pg-78Z"/>
+                            <constraint firstItem="eXl-xD-Mzu" firstAttribute="trailing" secondItem="vY5-8y-H2l" secondAttribute="trailing" id="x2B-KH-5Rv"/>
+                            <constraint firstItem="eXl-xD-Mzu" firstAttribute="leading" secondItem="vY5-8y-H2l" secondAttribute="leading" id="xwa-BH-su4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vY5-8y-H2l"/>
                     </view>
@@ -88,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SyT-Rl-6l5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1221.7391304347827" y="912.72321428571422"/>
+            <point key="canvasLocation" x="1171.0144927536232" y="912.72321428571422"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="f8W-RP-lhf">
@@ -113,5 +162,7 @@
     </scenes>
     <resources>
         <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
+        <image name="square.and.arrow.up.on.square" catalog="system" width="117" height="128"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
     </resources>
 </document>
