@@ -17,6 +17,7 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var blinkView: UIView!
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var previewImageView: UIImageView!
+    @IBOutlet weak var cameraDSLRLayoutView: UIImageView!
     
     var imgSnapshot: UIImage?
     var resourceImage: String?
@@ -26,6 +27,8 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cameraDSLRLayoutView.isHidden = true
         
         navigationController?.navigationBar.isHidden = true
         
@@ -118,13 +121,14 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
         if sender.selectedSegmentIndex == 0 {
             
             previewImageView.isHidden = false
+            cameraDSLRLayoutView.isHidden = true
             
 //            cameraView.alpha = 1
 //            dslrView.alpha = 0
         } else {
 //            cameraView.alpha = 0
 //            dslrView.alpha = 1
-            
+            cameraDSLRLayoutView.isHidden = false
             previewImageView.isHidden = true
         }
     }

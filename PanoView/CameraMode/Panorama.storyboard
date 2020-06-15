@@ -10,7 +10,7 @@
         <!--Panorama View Controller-->
         <scene sceneID="xgp-Sg-spz">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="BRP-0H-eOd" customClass="PanoramaViewController" customModule="PanoView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="BRP-0H-eOd" customClass="PanoramaViewController" customModule="Vipiee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dhn-mi-ndQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +19,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="758"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera_layout" translatesAutoresizingMaskIntoConstraints="NO" id="J45-Im-mk5">
+                                <rect key="frame" x="0.0" y="-116" width="414" height="918"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-fU-imf">
                                 <rect key="frame" x="0.0" y="44" width="414" height="758"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,6 +79,7 @@
                     <navigationItem key="navigationItem" id="z9m-0E-RCB"/>
                     <connections>
                         <outlet property="blinkView" destination="xm3-fU-imf" id="AJ2-Pk-T2e"/>
+                        <outlet property="cameraDSLRLayoutView" destination="J45-Im-mk5" id="vVF-Ac-qSN"/>
                         <outlet property="previewImageView" destination="Ydd-Qe-NrN" id="Ocd-6h-gyp"/>
                         <outlet property="sceneView" destination="eg0-fs-3qd" id="Rlt-UZ-lyZ"/>
                     </connections>
@@ -85,6 +90,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera_layout" width="375" height="812"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
