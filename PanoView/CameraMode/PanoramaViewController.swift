@@ -10,6 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 import CoreData
+import AVFoundation
 
 class PanoramaViewController: UIViewController, ARSCNViewDelegate {
     
@@ -19,6 +20,7 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
     
     var imgSnapshot: UIImage?
     var resourceImage: String?
+    var player: AVAudioPlayer?
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -33,6 +35,7 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
         
         addPanoView()
         setupPreviewImageView()
+        playSound()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -161,5 +164,33 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
         scene.rootNode.addChildNode(sphereNode)
     }
     
+    func playSound() {
+        var sound = ""
+        if resourceImage!.contains("Nature") {
+            sound = "forest"
+        } else {
+            sound = "restaurant"
+        }
+        guard let url = Bundle.main.url(forResource: "\(sound)", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+            
+            player.play()
+            player.numberOfLoops = -1
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
     
 }
