@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Indoor3_ABC_Building_Directors_Paintings_360-CC-min.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

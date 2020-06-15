@@ -7,29 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		378007C624914DBA00D8E5AC /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378007C524914DBA00D8E5AC /* Category.storyboard */; };
+		378007C8249154A800D8E5AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378007C7249154A800D8E5AC /* Main.storyboard */; };
+		378007CA2491557F00D8E5AC /* Panorama.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378007C92491557F00D8E5AC /* Panorama.storyboard */; };
+		378007CC249155A600D8E5AC /* PanoramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007CB249155A600D8E5AC /* PanoramaViewController.swift */; };
+		378007CF2491EC5C00D8E5AC /* PanoView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 378007CD2491EC5C00D8E5AC /* PanoView.xcdatamodeld */; };
+		378007D12491EE3300D8E5AC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007D02491EE3300D8E5AC /* CoreDataHelper.swift */; };
+		378007D32491EE7E00D8E5AC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007D22491EE7E00D8E5AC /* Extension.swift */; };
+		378007D52491EEDA00D8E5AC /* Photo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007D42491EEDA00D8E5AC /* Photo+Extensions.swift */; };
+		378007E92492181B00D8E5AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007E82492181B00D8E5AC /* Constants.swift */; };
+		378007EB249291AE00D8E5AC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007EA249291AE00D8E5AC /* CategoryViewController.swift */; };
+		378007EF24931C8400D8E5AC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007ED24931C8400D8E5AC /* CategoryCell.swift */; };
+		378007F024931C8400D8E5AC /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378007EE24931C8400D8E5AC /* CategoryCell.xib */; };
+		378007F72493A5D300D8E5AC /* PhotoCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007F52493A5D300D8E5AC /* PhotoCategoryCell.swift */; };
+		378007F82493A5D300D8E5AC /* PhotoCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378007F62493A5D300D8E5AC /* PhotoCategoryCell.xib */; };
+		378007FA2493A62100D8E5AC /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007F92493A62100D8E5AC /* DummyData.swift */; };
+		378008052497522500D8E5AC /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 378008032497522500D8E5AC /* forest.mp3 */; };
+		378008062497522500D8E5AC /* restaurant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 378008042497522500D8E5AC /* restaurant.mp3 */; };
+		37D625122491492A00E33948 /* Galleries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D625112491492A00E33948 /* Galleries.storyboard */; };
+		37D6251824914B9600E33948 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D6251724914B9600E33948 /* Search.storyboard */; };
 		830042AD248A589800F1D179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830042AC248A589800F1D179 /* AppDelegate.swift */; };
 		830042AF248A589800F1D179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830042AE248A589800F1D179 /* SceneDelegate.swift */; };
 		830042B1248A589800F1D179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830042B0248A589800F1D179 /* ViewController.swift */; };
-		830042B4248A589800F1D179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830042B2248A589800F1D179 /* Main.storyboard */; };
 		830042B6248A589A00F1D179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830042B5248A589A00F1D179 /* Assets.xcassets */; };
 		830042B9248A589A00F1D179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830042B7248A589A00F1D179 /* LaunchScreen.storyboard */; };
 		830042C1248A598100F1D179 /* Hellbrunn25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 830042C0248A598100F1D179 /* Hellbrunn25.jpg */; };
-		83EEB47F248F71B100C3CE7F /* Panorama.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EEB47E248F71B100C3CE7F /* Panorama.storyboard */; };
-		83EEB481248F74A000C3CE7F /* PanoramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EEB480248F74A000C3CE7F /* PanoramaViewController.swift */; };
+		8344A7F32495C60100595DF3 /* GalleryCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344A7F22495C60100595DF3 /* GalleryCollectionVC.swift */; };
+		8344A7F62495C6EF00595DF3 /* GalleryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344A7F52495C6EF00595DF3 /* GalleryCollectionCell.swift */; };
+		8344A7F82495CC3400595DF3 /* SelectedImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344A7F72495CC3400595DF3 /* SelectedImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		830042A9248A589800F1D179 /* PanoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		378007C524914DBA00D8E5AC /* Category.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		378007C7249154A800D8E5AC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		378007C92491557F00D8E5AC /* Panorama.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Panorama.storyboard; sourceTree = "<group>"; };
+		378007CB249155A600D8E5AC /* PanoramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaViewController.swift; sourceTree = "<group>"; };
+		378007CE2491EC5C00D8E5AC /* PanoView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PanoView.xcdatamodel; sourceTree = "<group>"; };
+		378007D02491EE3300D8E5AC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		378007D22491EE7E00D8E5AC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		378007D42491EEDA00D8E5AC /* Photo+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+Extensions.swift"; sourceTree = "<group>"; };
+		378007E82492181B00D8E5AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		378007EA249291AE00D8E5AC /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		378007ED24931C8400D8E5AC /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		378007EE24931C8400D8E5AC /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		378007F52493A5D300D8E5AC /* PhotoCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCategoryCell.swift; sourceTree = "<group>"; };
+		378007F62493A5D300D8E5AC /* PhotoCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCategoryCell.xib; sourceTree = "<group>"; };
+		378007F92493A62100D8E5AC /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		378008032497522500D8E5AC /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
+		378008042497522500D8E5AC /* restaurant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = restaurant.mp3; sourceTree = "<group>"; };
+		37D625112491492A00E33948 /* Galleries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Galleries.storyboard; sourceTree = "<group>"; };
+		37D6251724914B9600E33948 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		830042A9248A589800F1D179 /* Vipiee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vipiee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		830042AC248A589800F1D179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		830042AE248A589800F1D179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		830042B0248A589800F1D179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		830042B3248A589800F1D179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		830042B5248A589A00F1D179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830042B8248A589A00F1D179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		830042BA248A589A00F1D179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830042C0248A598100F1D179 /* Hellbrunn25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hellbrunn25.jpg; sourceTree = "<group>"; };
-		83EEB47E248F71B100C3CE7F /* Panorama.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Panorama.storyboard; sourceTree = "<group>"; };
-		83EEB480248F74A000C3CE7F /* PanoramaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaViewController.swift; sourceTree = "<group>"; };
+		8344A7F22495C60100595DF3 /* GalleryCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionVC.swift; sourceTree = "<group>"; };
+		8344A7F52495C6EF00595DF3 /* GalleryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionCell.swift; sourceTree = "<group>"; };
+		8344A7F72495CC3400595DF3 /* SelectedImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +81,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		378007EC24931C5300D8E5AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				378007F22493A4F500D8E5AC /* Storyboard */,
+				378007F12493A4EB00D8E5AC /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		378007F12493A4EB00D8E5AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				378007ED24931C8400D8E5AC /* CategoryCell.swift */,
+				378007EE24931C8400D8E5AC /* CategoryCell.xib */,
+				378007F52493A5D300D8E5AC /* PhotoCategoryCell.swift */,
+				378007F62493A5D300D8E5AC /* PhotoCategoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		378007F22493A4F500D8E5AC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				378007C524914DBA00D8E5AC /* Category.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		378007F42493A52100D8E5AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				378007EA249291AE00D8E5AC /* CategoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		378007FE249741B600D8E5AC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				378008032497522500D8E5AC /* forest.mp3 */,
+				378008042497522500D8E5AC /* restaurant.mp3 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		37D62510249148EA00E33948 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				8344A7F42495C62400595DF3 /* View */,
+				8344A7F12495C58C00595DF3 /* Controller */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		37D6251324914B1000E33948 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				37D6251724914B9600E33948 /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		37D6251424914B3900E33948 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				378007C7249154A800D8E5AC /* Main.storyboard */,
+				378007D02491EE3300D8E5AC /* CoreDataHelper.swift */,
+				378007D22491EE7E00D8E5AC /* Extension.swift */,
+				378007D42491EEDA00D8E5AC /* Photo+Extensions.swift */,
+				378007E82492181B00D8E5AC /* Constants.swift */,
+				378007F92493A62100D8E5AC /* DummyData.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		37D6251524914B3F00E33948 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				378007F42493A52100D8E5AC /* Controller */,
+				378007EC24931C5300D8E5AC /* View */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		37D6251624914B4700E33948 /* CameraMode */ = {
+			isa = PBXGroup;
+			children = (
+				378007CB249155A600D8E5AC /* PanoramaViewController.swift */,
+				378007C92491557F00D8E5AC /* Panorama.storyboard */,
+			);
+			path = CameraMode;
+			sourceTree = "<group>";
+		};
 		830042A0248A589800F1D179 = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +185,7 @@
 		830042AA248A589800F1D179 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				830042A9248A589800F1D179 /* PanoView.app */,
+				830042A9248A589800F1D179 /* Vipiee.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,18 +193,40 @@
 		830042AB248A589800F1D179 /* PanoView */ = {
 			isa = PBXGroup;
 			children = (
+				378007FE249741B600D8E5AC /* Assets */,
+				37D6251624914B4700E33948 /* CameraMode */,
+				37D6251524914B3F00E33948 /* Category */,
+				37D6251424914B3900E33948 /* Base */,
+				37D6251324914B1000E33948 /* Search */,
+				37D62510249148EA00E33948 /* Gallery */,
 				830042AC248A589800F1D179 /* AppDelegate.swift */,
 				830042AE248A589800F1D179 /* SceneDelegate.swift */,
-				83EEB480248F74A000C3CE7F /* PanoramaViewController.swift */,
 				830042B0248A589800F1D179 /* ViewController.swift */,
-				830042B2248A589800F1D179 /* Main.storyboard */,
-				83EEB47E248F71B100C3CE7F /* Panorama.storyboard */,
 				830042B5248A589A00F1D179 /* Assets.xcassets */,
 				830042C0248A598100F1D179 /* Hellbrunn25.jpg */,
 				830042B7248A589A00F1D179 /* LaunchScreen.storyboard */,
 				830042BA248A589A00F1D179 /* Info.plist */,
+				378007CD2491EC5C00D8E5AC /* PanoView.xcdatamodeld */,
 			);
 			path = PanoView;
+			sourceTree = "<group>";
+		};
+		8344A7F12495C58C00595DF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8344A7F22495C60100595DF3 /* GalleryCollectionVC.swift */,
+				8344A7F52495C6EF00595DF3 /* GalleryCollectionCell.swift */,
+				8344A7F72495CC3400595DF3 /* SelectedImageVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8344A7F42495C62400595DF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37D625112491492A00E33948 /* Galleries.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +246,7 @@
 			);
 			name = PanoView;
 			productName = PanoView;
-			productReference = 830042A9248A589800F1D179 /* PanoView.app */;
+			productReference = 830042A9248A589800F1D179 /* Vipiee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,11 +287,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378007C624914DBA00D8E5AC /* Category.storyboard in Resources */,
+				378008062497522500D8E5AC /* restaurant.mp3 in Resources */,
+				378007CA2491557F00D8E5AC /* Panorama.storyboard in Resources */,
 				830042B9248A589A00F1D179 /* LaunchScreen.storyboard in Resources */,
+				37D625122491492A00E33948 /* Galleries.storyboard in Resources */,
+				378008052497522500D8E5AC /* forest.mp3 in Resources */,
+				378007C8249154A800D8E5AC /* Main.storyboard in Resources */,
 				830042B6248A589A00F1D179 /* Assets.xcassets in Resources */,
-				830042B4248A589800F1D179 /* Main.storyboard in Resources */,
+				37D6251824914B9600E33948 /* Search.storyboard in Resources */,
+				378007F024931C8400D8E5AC /* CategoryCell.xib in Resources */,
+				378007F82493A5D300D8E5AC /* PhotoCategoryCell.xib in Resources */,
 				830042C1248A598100F1D179 /* Hellbrunn25.jpg in Resources */,
-				83EEB47F248F71B100C3CE7F /* Panorama.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,24 +309,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378007EB249291AE00D8E5AC /* CategoryViewController.swift in Sources */,
+				378007D12491EE3300D8E5AC /* CoreDataHelper.swift in Sources */,
 				830042B1248A589800F1D179 /* ViewController.swift in Sources */,
-				83EEB481248F74A000C3CE7F /* PanoramaViewController.swift in Sources */,
+				378007D32491EE7E00D8E5AC /* Extension.swift in Sources */,
+				378007CC249155A600D8E5AC /* PanoramaViewController.swift in Sources */,
+				8344A7F82495CC3400595DF3 /* SelectedImageVC.swift in Sources */,
 				830042AD248A589800F1D179 /* AppDelegate.swift in Sources */,
+				378007F72493A5D300D8E5AC /* PhotoCategoryCell.swift in Sources */,
+				378007CF2491EC5C00D8E5AC /* PanoView.xcdatamodeld in Sources */,
+				378007D52491EEDA00D8E5AC /* Photo+Extensions.swift in Sources */,
 				830042AF248A589800F1D179 /* SceneDelegate.swift in Sources */,
+				378007E92492181B00D8E5AC /* Constants.swift in Sources */,
+				8344A7F62495C6EF00595DF3 /* GalleryCollectionCell.swift in Sources */,
+				8344A7F32495C60100595DF3 /* GalleryCollectionVC.swift in Sources */,
+				378007FA2493A62100D8E5AC /* DummyData.swift in Sources */,
+				378007EF24931C8400D8E5AC /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		830042B2248A589800F1D179 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				830042B3248A589800F1D179 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		830042B7248A589A00F1D179 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,14 +461,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3K5Z68446;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PanoView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arifsetyoaji.PanoView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Vipiee;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,7 +486,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arifsetyoaji.PanoView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Vipiee;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -350,6 +514,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		378007CD2491EC5C00D8E5AC /* PanoView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				378007CE2491EC5C00D8E5AC /* PanoView.xcdatamodel */,
+			);
+			currentVersion = 378007CE2491EC5C00D8E5AC /* PanoView.xcdatamodel */;
+			path = PanoView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 830042A1248A589800F1D179 /* Project object */;
 }
