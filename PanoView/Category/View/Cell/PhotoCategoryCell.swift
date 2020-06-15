@@ -17,6 +17,24 @@ class PhotoCategoryCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setupImage()
+        setupPlaceLabel()
+    }
+    
+    func setupImage(){
+        backgroundImage.layer.masksToBounds = false
+        backgroundImage.layer.shadowColor = UIColor.black.cgColor
+        backgroundImage.layer.shadowRadius = 5
+        backgroundImage.layer.shadowOpacity = 0.7
+        backgroundImage.layer.shadowOffset = CGSize(width: 2, height: 5)
+    }
+    
+    func setupPlaceLabel(){
+        placeLabel.layer.masksToBounds = false
+        placeLabel.layer.shadowColor = UIColor.black.cgColor
+        placeLabel.layer.shadowRadius = 2
+        placeLabel.layer.shadowOpacity = 0.7
+        placeLabel.layer.shadowOffset = CGSize(width: 0, height: 2)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

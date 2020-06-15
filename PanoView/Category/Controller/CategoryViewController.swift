@@ -59,14 +59,18 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: categoryCellID, for: indexPath) as! CategoryCell
         cell.categoryNameLabel.text = Constants.Categories.allValues[indexPath.row].rawValue
+        cell.categoryNameLabel.textColor = UIColor.black
         if selectedCategory == indexPath.row {
             cell.contentView.backgroundColor = UIColor.red
+            cell.categoryNameLabel.textColor = UIColor.white
+            cell.contentView.layer.borderWidth = 0
         } else {
             cell.contentView.backgroundColor = UIColor.clear
+            cell.categoryNameLabel.textColor = UIColor.black
+            cell.contentView.layer.borderWidth = 0.5
         }
-        cell.contentView.layer.borderWidth = 1
         cell.contentView.layer.borderColor = UIColor.black.cgColor
-        cell.contentView.layer.cornerRadius = 5
+        cell.contentView.layer.cornerRadius = 11
         return cell
     }
     
@@ -94,6 +98,7 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
         cell.placeLabel.text = data.place
         cell.sourceLabel.text = "Source: \(data.source ?? "")"
         cell.backgroundImage.image = UIImage(named: data.imageName ?? "")
+        cell.selectionStyle = .none
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
