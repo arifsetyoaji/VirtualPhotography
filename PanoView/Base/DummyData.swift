@@ -28,9 +28,9 @@ class DummyData {
             return arrayPhoto
         case 2:
             category = Constants.Categories.Building.rawValue
-            arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Building 1", source: "Dummy Building 1"))
-            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Building 2", source: "Dummy Building 2"))
-            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Building 3", source: "Dummy Building 3"))
+            //arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "European Southern Observaroty HQ, Germany", source: "ESO.org"))
+            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Building 3", source: "Pixexid.com"))
+            //arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "European Southern Observaroty HQ, Germany", source: "C. Malin / ESO"))
             arrayPhoto.append(Photos(imageName: "\(category)4", category: "\(category)", place: "European Southern Observaroty HQ, Germany", source: "C. Malin / ESO"))
             return arrayPhoto
         case 3:
@@ -49,9 +49,9 @@ class DummyData {
             return arrayPhoto
         case 5:
             category = Constants.Categories.Indoor.rawValue
-            arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "Indoor 1", source: "Dummy Indoor 1"))
-            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Indoor 2", source: "Dummy Indoor 2"))
-            arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Indoor 3", source: "Dummy Indoor3"))
+            //arrayPhoto.append(Photos(imageName: "\(category)1", category: "\(category)", place: "ABC Building", source: "ESO.org"))
+            arrayPhoto.append(Photos(imageName: "\(category)2", category: "\(category)", place: "Restaurant", source: "Pixexid.com"))
+            //arrayPhoto.append(Photos(imageName: "\(category)3", category: "\(category)", place: "Brammer Residencia", source: "Pixexid.com"))
             return arrayPhoto
         default:
             category = ""

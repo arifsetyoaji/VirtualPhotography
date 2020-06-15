@@ -61,7 +61,7 @@
                             <outlet property="delegate" destination="bJE-YU-rHB" id="mC8-kX-Wna"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Gallery" image="photo.fill.on.rectangle.fill" catalog="system" selectedImage="photo.fill.on.rectangle.fill" id="hmM-gr-sN7"/>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="photo.on.rectangle" catalog="system" selectedImage="photo.on.rectangle" id="hmM-gr-sN7"/>
                     <navigationItem key="navigationItem" title="Gallery" id="gMo-Uy-4qK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
@@ -143,7 +143,7 @@
         <scene sceneID="f8W-RP-lhf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U24-Lt-l9A" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Gallery" image="photo.fill.on.rectangle.fill" catalog="system" selectedImage="photo.fill.on.rectangle.fill" id="GgG-Yp-Wcy"/>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="photo.on.rectangle" catalog="system" selectedImage="photo.on.rectangle" id="GgG-Yp-Wcy"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CmJ-Gq-bpt">
@@ -160,8 +160,9 @@
             <point key="canvasLocation" x="-564" y="913"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
-        <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
+        <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
         <image name="square.and.arrow.up.on.square" catalog="system" width="117" height="128"/>
         <image name="trash" catalog="system" width="121" height="128"/>
     </resources>
