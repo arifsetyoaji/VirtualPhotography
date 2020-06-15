@@ -22,8 +22,8 @@
 		378007F72493A5D300D8E5AC /* PhotoCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007F52493A5D300D8E5AC /* PhotoCategoryCell.swift */; };
 		378007F82493A5D300D8E5AC /* PhotoCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378007F62493A5D300D8E5AC /* PhotoCategoryCell.xib */; };
 		378007FA2493A62100D8E5AC /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378007F92493A62100D8E5AC /* DummyData.swift */; };
-		37800800249741F200D8E5AC /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 378007FF249741F200D8E5AC /* forest.mp3 */; };
-		378008022497446400D8E5AC /* restaurant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 378008012497446400D8E5AC /* restaurant.mp3 */; };
+		3780080A249754C200D8E5AC /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 37800808249754C200D8E5AC /* forest.mp3 */; };
+		3780080B249754C200D8E5AC /* restaurant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 37800809249754C200D8E5AC /* restaurant.mp3 */; };
 		37D625122491492A00E33948 /* Galleries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D625112491492A00E33948 /* Galleries.storyboard */; };
 		37D6251824914B9600E33948 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D6251724914B9600E33948 /* Search.storyboard */; };
 		830042AD248A589800F1D179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830042AC248A589800F1D179 /* AppDelegate.swift */; };
@@ -53,8 +53,8 @@
 		378007F52493A5D300D8E5AC /* PhotoCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCategoryCell.swift; sourceTree = "<group>"; };
 		378007F62493A5D300D8E5AC /* PhotoCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCategoryCell.xib; sourceTree = "<group>"; };
 		378007F92493A62100D8E5AC /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
-		378007FF249741F200D8E5AC /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = forest.mp3; path = ../../../../../../../../Downloads/forest.mp3; sourceTree = "<group>"; };
-		378008012497446400D8E5AC /* restaurant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = restaurant.mp3; path = ../../../../../../../../Downloads/restaurant.mp3; sourceTree = "<group>"; };
+		37800808249754C200D8E5AC /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
+		37800809249754C200D8E5AC /* restaurant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = restaurant.mp3; sourceTree = "<group>"; };
 		37D625112491492A00E33948 /* Galleries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Galleries.storyboard; sourceTree = "<group>"; };
 		37D6251724914B9600E33948 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		830042A9248A589800F1D179 /* Vipiee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vipiee.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,11 +117,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		378007FE249741B600D8E5AC /* Assets */ = {
+		378008072497549800D8E5AC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				378007FF249741F200D8E5AC /* forest.mp3 */,
-				378008012497446400D8E5AC /* restaurant.mp3 */,
+				37800808249754C200D8E5AC /* forest.mp3 */,
+				37800809249754C200D8E5AC /* restaurant.mp3 */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 		830042AB248A589800F1D179 /* PanoView */ = {
 			isa = PBXGroup;
 			children = (
-				378007FE249741B600D8E5AC /* Assets */,
+				378008072497549800D8E5AC /* Assets */,
 				37D6251624914B4700E33948 /* CameraMode */,
 				37D6251524914B3F00E33948 /* Category */,
 				37D6251424914B3900E33948 /* Base */,
@@ -288,11 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				378007C624914DBA00D8E5AC /* Category.storyboard in Resources */,
-				378008022497446400D8E5AC /* restaurant.mp3 in Resources */,
+				3780080B249754C200D8E5AC /* restaurant.mp3 in Resources */,
 				378007CA2491557F00D8E5AC /* Panorama.storyboard in Resources */,
 				830042B9248A589A00F1D179 /* LaunchScreen.storyboard in Resources */,
 				37D625122491492A00E33948 /* Galleries.storyboard in Resources */,
-				37800800249741F200D8E5AC /* forest.mp3 in Resources */,
+				3780080A249754C200D8E5AC /* forest.mp3 in Resources */,
 				378007C8249154A800D8E5AC /* Main.storyboard in Resources */,
 				830042B6248A589A00F1D179 /* Assets.xcassets in Resources */,
 				37D6251824914B9600E33948 /* Search.storyboard in Resources */,
