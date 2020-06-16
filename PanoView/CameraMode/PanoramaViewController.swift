@@ -92,11 +92,11 @@ class PanoramaViewController: UIViewController, ARSCNViewDelegate {
         imgSnapshot = UIGraphicsGetImageFromCurrentImageContext()!
         
         UIGraphicsEndImageContext()
-        
-        previewImageView.image = imgSnapshot
+        let newImgSnapshot = imgSnapshot?.rotate(radians: .pi/(-2))
+        previewImageView.image = newImgSnapshot
         
         let imageItem = Capture(context: context)
-        let imgdata = imgSnapshot!.pngData() as NSData?
+        let imgdata = newImgSnapshot!.pngData() as NSData?
         imageItem.image = imgdata as Data?
         
         self.saveItem()
